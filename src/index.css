@@ -25,7 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +65,61 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* for scrollbar */
+ul {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #ffffff;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+
+/* src/DropdownStyles.css */
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownButton {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItemHover {
+  background-color: gray;
+}
+
+.dropdownItemSelected {
+  background-color: lightblue;
 }
