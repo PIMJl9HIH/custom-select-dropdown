@@ -95,6 +95,8 @@ ul::-webkit-scrollbar-thumb {
   cursor: pointer;
   padding: 10px;
   border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #d6c2f8   ;
 }
 
 .dropdownList {
@@ -120,9 +122,9 @@ ul::-webkit-scrollbar-thumb {
 }
 
 .dropdownItemHover:hover {
-  background-color: gray; /* Using CSS hover for simplicity */
+  background-color: #EDE7F6  ; /* Using CSS hover for simplicity */
 }
 
 .dropdownItemSelected {
-  background-color: lightblue;
+  background-color: #d6c2f8   ;
 }
