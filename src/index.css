@@ -112,12 +112,15 @@ ul::-webkit-scrollbar-thumb {
 }
 
 .dropdownItem {
-  padding: 10px;
+  height: 30px;  /* Make sure this matches ITEM_HEIGHT in your JS */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
   cursor: pointer;
 }
 
-.dropdownItemHover {
-  background-color: gray;
+.dropdownItemHover:hover {
+  background-color: gray; /* Using CSS hover for simplicity */
 }
 
 .dropdownItemSelected {

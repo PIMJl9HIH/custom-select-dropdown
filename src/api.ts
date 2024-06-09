@@ -12,7 +12,7 @@ export const fetchNames = async () => {
         },
         params: {
           count: 1,
-          limit: 10,
+          limit: 1000,
           keys: "Name",
         },
       }
